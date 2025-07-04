@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Tic-Tac-Toe</title>
+  </head>
+  <body>
     <div class="wrapper">
-        <nav>
-            <div class="heading">
-                <h1>The Tic-Tac-Toe</h1>
-                <p>Because the World Definitely Needed Another Tic-Tac-Toe Game</p>
+      <nav>
+        <div class="heading">
+          <h1>The Tic-Tac-Toe</h1>
+          <p>Because the World Definitely Needed Another Tic-Tac-Toe Game</p>
+        </div>
+        <button id="theme"><img src="assets/light-mode.svg" alt="" /></button>
+      </nav>
+      <div class="game-section">
+        <div class="left-section-wrapper">
+          <div class="left-section">
+            <div class="game-board">
+              <div class="cells" data-index="0"></div>
+              <div class="cells" data-index="1"></div>
+              <div class="cells" data-index="2"></div>
+              <div class="cells" data-index="3"></div>
+              <div class="cells" data-index="4"></div>
+              <div class="cells" data-index="5"></div>
+              <div class="cells" data-index="6"></div>
+              <div class="cells" data-index="7"></div>
+              <div class="cells" data-index="8"></div>
+              <div class="next-round-msg"></div>
             </div>
-            <button id="theme"><img src="assets/light-mode.svg" alt=""></button>
-        </nav>
+            <div class="controls">
+              <div class="start">START</div>
+              <div class="reset">RESET</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section-wrapper">
+          <div class="right-section">
+            <div class="section-heading">
+              <h2>Player Details</h2>
+              <div class="player-details">
+                <div class="player-name" id="player-1">
+                  <span>Player 1</span>
+                  <img src="assets/cross.svg" alt="" />
+                </div>
+                <div class="player-name" id="player-2">
+                  <span>Player 2</span>
+                  <img src="assets/circle-ring.svg " alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="turn-section">
+              <h2>Turn</h2>
+              <div class="active-turn">
+                <span>Player 1</span>
+                <img src="assets/cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="score-section">
+              <h2>Score Board</h2>
+              <div class="score-board">
+                <div class="player-scores">
+                  <span>Player 1 <img src="assets/cross.svg" alt="" width="20px"></span>
+                  <div class="win-win">Wins <span id="player1-wins"></span></div>
+                  <div class="loss-loss">Loss<span id="player1-loss"></span></div>
+                  <span class="draws">Draw</span>
+                </div>
+                <div class="player-scores">
+                  <span>Player 2 <img src="assets/circle-ring.svg" alt="" width="20px"></span>
+                  <div class="win-win"2>Wins<span id="player2-wins"></span></div>
+                  <div class="loss-loss">Loss<span id="player2-loss"></span></div>
+                  <span class="draws">Draw</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="winning-msg">
+            <h3>CONGRATULATIONS</h3>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="script.js"></script>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
