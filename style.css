@@ -126,14 +126,12 @@ nav img {
 }
 
 .new-round-popup {
-  animation: new-round-popup 1s ease-in forwards
-  
+  animation: new-round-popup 1s ease-in forwards;
 }
 
 @keyframes new-round-popup {
   0% {
     bottom: 0;
-
   }
   75% {
     opacity: 0;
@@ -408,5 +406,74 @@ nav img {
     opacity: 1;
     visibility: visible;
     transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .left-section-wrapper {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .game-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-section-wrapper,
+  .right-section-wrapper {
+    width: 100%;
+    padding: 10px 5vw;
+  }
+  .left-section {
+    margin-bottom: 30px;
+  }
+  .game-board {
+    width: 80vw;
+    height: 80vw;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 40px auto 20px auto;
+  }
+  .score-board,
+  .section-heading,
+  .turn-section,
+  .right-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 10px 2vw 0;
+  }
+  .heading h1 {
+    font-size: 2.2rem;
+  }
+  .game-board {
+    width: 320px;
+    height: 320px;
+    max-width: 340px;
+    max-height: 340px;
+    border-width: 5px;
+    margin: 30px auto 10px auto;
+  }
+  .cells {
+    font-size: 1.2rem;
+  }
+  .left-section-wrapper,
+  .right-section-wrapper {
+    padding: 5px 2vw;
+  }
+  .score-board,
+  .section-heading,
+  .turn-section,
+  .right-section {
+    width: 100%;
+  }
+  .winning-msg {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 5px;
   }
 }
