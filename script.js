@@ -157,7 +157,6 @@ function showDrawMsg() {
 // }
 
 function showNewRoundMsg() {
-  console.log("new Round");
   const roundMsg = document.querySelector(".next-round-msg");
   let countdown = 4;
 
@@ -184,6 +183,10 @@ cells.forEach((cell) => {
 
     if (!gameStarted) {
       alert("start the game");
+      return;
+    }
+
+    if (gameOver) {
       return;
     }
 
