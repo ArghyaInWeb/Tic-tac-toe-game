@@ -32,8 +32,6 @@ body.light-mode {
 }
 
 nav {
-  /* width: 100%; */
-  /* background-color: #E0BF03; */
   border-radius: 6px;
   padding: 0.5vw 2vw;
   display: flex;
@@ -87,7 +85,6 @@ nav img {
 }
 
 .left-section {
-  /* background-color: red; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -197,7 +194,6 @@ nav img {
   }
 }
 .controls {
-  /* align-self: flex-end; */
   width: 100%;
   flex: 1;
   display: flex;
@@ -337,7 +333,6 @@ nav img {
 }
 .score-board {
   width: 100%;
-  /* height: 60px; */
   background-color: #e0bf03c5;
   display: flex;
   flex-direction: column;

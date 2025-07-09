@@ -36,7 +36,6 @@ function startGame() {
   resetBoard();
   gameStarted = true;
 
-  // checkOverwrite(index)
 }
 
 const reset = document.querySelector(".reset");
@@ -149,13 +148,6 @@ function showDrawMsg() {
 }
 
 //? Function: Show New Round
-// function showNewRoundMsg() {
-
-//   setTimeout(() => {
-//     startGame();
-//   }, 5000);
-// }
-
 function showNewRoundMsg() {
   const roundMsg = document.querySelector(".next-round-msg");
   let countdown = 4;
