@@ -20,8 +20,8 @@ let player2Loss = 0;
 let tie = 0;
 
 theme.addEventListener("click", (e) => {
-  body.classList.toggle("light-mode");
-  if (body.classList.contains("light-mode")) {
+  wrapper.classList.toggle("light-mode");
+  if (wrapper.classList.contains("light-mode")) {
     theme.innerHTML = '<img src="assets/dark-mode.svg">';
   } else {
     theme.innerHTML = '<img src="assets/light-mode.svg">';

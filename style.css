@@ -109,6 +109,11 @@ nav img {
   border: 10px solid #280004;
 }
 
+.wrapper.light-mode {
+  background-color: var(--body-background-white);
+  border-color: var(--body-background-white);
+}
+
 .next-round-msg {
   position: absolute;
   left: 0;
